@@ -1,0 +1,90 @@
+.marginTop70 {
+    margin-top: 70px;
+}
+
+
+
+  input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+.container{
+    padding: 50px;
+    width: 35%;
+    text-align: center;
+    margin: 0 auto;
+    height: 500px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 7px 5px 10px grey;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,92,168,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.tableContainer{
+    margin: 70px auto;
+}
+
+.mainContainer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    background-color: #f6e6e6;
+}
+
+/* Login Button CSS */
+.button18 {
+  align-items: center;
+  background-color: #b94343;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button18:hover,
+.button18:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.inputText {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
