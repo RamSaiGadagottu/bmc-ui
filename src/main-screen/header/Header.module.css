@@ -1,0 +1,11 @@
+.navBar{
+    background-color: #038571;
+  }
+
+.navBar a{
+    color:white;
+}
+
+.gap{
+    gap: 1em;
+}

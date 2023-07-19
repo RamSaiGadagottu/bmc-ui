@@ -1,0 +1,52 @@
+.documentNumb{
+    background-color: white;
+    padding: 10pt;
+}
+.borderGrey{
+    border-bottom: 1px solid rgb(222, 213, 213);
+}
+.width50 {
+    width: 50%;
+    float: left;
+    text-align: left;
+ }
+ .width40 {
+    width: 40%;
+    float: left;
+    text-align: left;
+ }
+
+ .width100{
+    width:100%;
+ }
+
+ .displayGrid{
+    display: grid;
+ }
+
+ .marginTop30{
+    margin-top: 30pt;
+ }
+
+ .navBar{
+    background-color: white;
+    padding:0px;
+    border-radius: 5pt;
+ }
+
+ .navLinkSpace{
+    padding: 8pt;
+    padding-left: 20pt;
+    padding-right: 20pt;
+    text-decoration: none;
+    color: grey;
+    border-right:1px solid lightgrey;
+ }
+
+ .container > .navbar-nav > a.active{
+    color: green;
+ }
+
+ .navLinkSpace:hover{
+    color: black;
+ }
