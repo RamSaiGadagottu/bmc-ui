@@ -1,9 +1,20 @@
+import { useState } from "react";
 import { Container } from "react-bootstrap"
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import styles from './DocumentDetails.module.css';
+import DocumentStatus from "./DocumentStatus/DocumentStatus";
 
 export default function DocumentDetails(){
+
+    const [activeTab, setActiveTab] = useState('documentStatus');
+
+    const handleTabClick = (event, tabKey) => {
+        console.log('tab clicked:',tabKey);
+        event.preventDefault();
+        setActiveTab(tabKey)
+    }
+
     return(
         <>
         <Container className={styles.displayGrid}>
@@ -56,19 +67,22 @@ export default function DocumentDetails(){
             <Navbar className={`${styles.width100} ${styles.navBar}`}>
             <Container>
             <Nav className="me-auto">
-                <a href="#home" className={styles.navLinkSpace} >Document Status</a>
-                <a href="#features" className={styles.navLinkSpace}>Document Logs</a>
-                <a href="#pricing" className={styles.navLinkSpace}>Parent Documents</a>
-                <a href="#pricing1" className={styles.navLinkSpace}>Sibling Documents</a>
-                <a href="#pricing2" className={styles.navLinkSpace}>Child Documents</a>
-                <a href="#pricing3" className={styles.navLinkSpace}>Extended Properties</a>
+                <a href="#home" onClick={(e) => handleTabClick(e,'documentStatus')} className={styles.navLinkSpace} >Document Status</a>
+                <a href="#features" onClick={(e) => handleTabClick(e,'documentLogs')} className={styles.navLinkSpace}>Document Logs</a>
+                <a href="#pricing" onClick={(e) => handleTabClick(e,'parentDocuments')} className={styles.navLinkSpace}>Parent Documents</a>
+                <a href="#pricing1" onClick={(e) => handleTabClick(e,'siblingDocuments')} className={styles.navLinkSpace}>Sibling Documents</a>
+                <a href="#pricing2" onClick={(e) => handleTabClick(e,'childDocuments')} className={styles.navLinkSpace}>Child Documents</a>
+                <a href="#pricing3" onClick={(e) => handleTabClick(e,'extendedProperties')} className={styles.navLinkSpace}>Extended Properties</a>
             </Nav>
             </Container>
             </Navbar>
             {/* </div> */}
         {/* </div> */}
         {/* </Container> */}
-
+            <div className={styles.marginTop30}></div>
+            <Container>
+                {activeTab ==='documentStatus' && <DocumentStatus />}
+            </Container>
         </Container>
         </>
 )

@@ -20,7 +20,7 @@ export default function Search(){
         <div style={{padding:'20px'}}></div>
         {<SearchResults data={docs}/>}
 
-        {/* <DocumentDetails /> */}
+        <DocumentDetails />
         </>
     )
 }
